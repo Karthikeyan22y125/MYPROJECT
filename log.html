@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Select Example</title>
+</head>
+<body>
+
+    <form id="myForm">
+        <label for="mySelect">Choose an option:</label>
+        <select id="mySelect" name="mySelect">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+        <button type="button" onclick="handleSelect()">Submit</button>
+    </form>
+
+    <script>
+        function handleSelect() {
+            // Get the selected value from the dropdown
+            var selectedOption = document.getElementById("mySelect").value;
+
+            // Perform actions based on the selected value
+            if (selectedOption === "option1") {
+                alert("You selected Option 1!");
+            } else if (selectedOption === "option2") {
+                alert("You selected Option 2!");
+            } else if (selectedOption === "option3") {
+                alert("You selected Option 3!");
+            } else {
+                alert("Invalid selection!");
+            }
+        }
+    </script>
+
+</body>
+</html>
